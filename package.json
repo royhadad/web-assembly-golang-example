@@ -1,0 +1,21 @@
+{
+  "name": "web-assembly-golang-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:wasm": "cd ./cmd/wasm && GOOS=js GOARCH=wasm go build -o ../../assets/main.wasm && cd ../..",
+    "start": "npm run build:wasm && go run ./cmd/server/main.go"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/royhadad/web-assembly-golang-example.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/royhadad/web-assembly-golang-example/issues"
+  },
+  "homepage": "https://github.com/royhadad/web-assembly-golang-example#readme"
+}
