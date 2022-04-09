@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build:wasm": "cd ./cmd/wasm && GOOS=js GOARCH=wasm go build -o ../../assets/main.wasm && cd ../..",
+    "build:wasm": "cd wasm && GOOS=js GOARCH=wasm go build -o ../assets/main.wasm && cd ..",
     "start": "npm run build:wasm && http-server ./assets --port 9000"
   },
   "repository": {
