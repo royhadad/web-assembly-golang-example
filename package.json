@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build:wasm": "cd ./cmd/wasm && GOOS=js GOARCH=wasm go build -o ../../assets/main.wasm && cd ../..",
-    "start": "npm run build:wasm && go run ./cmd/server/main.go"
+    "start": "npm run build:wasm && http-server ./assets --port 9000"
   },
   "repository": {
     "type": "git",
@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/royhadad/web-assembly-golang-example/issues"
   },
-  "homepage": "https://github.com/royhadad/web-assembly-golang-example#readme"
+  "homepage": "https://github.com/royhadad/web-assembly-golang-example#readme",
+  "dependencies": {
+    "http-server": "^14.1.0"
+  }
 }
