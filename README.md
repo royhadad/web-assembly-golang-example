@@ -1,6 +1,7 @@
 # web-assembly-golang-example
 
 This is a basic POC of a web-assembly module written in Go, used in conjunction with javascript in the browser.
+credits go to this guy for the help https://www.youtube.com/watch?v=10Mz3z-W1BE
 
 # How to develop locally:
 
